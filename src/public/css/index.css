@@ -1,8 +1,15 @@
 .result__message {
+    display: flex;
     background: #a0c99d;
     height: 50px;
     width: auto;
     color: rgb(54, 100, 61);
+    align-items: center;
+}
+
+.result__message p {
+    margin: 0;
+    margin-left: 15px;
 }
 
 .todo__content {

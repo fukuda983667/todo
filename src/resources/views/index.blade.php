@@ -8,7 +8,9 @@
 
 @if(isset($message))
     <!-- $messageがnullでない場合に表示するコンテンツ -->
-    <div class="result__message">{{ $message }}</div>
+    <div class="result__message">
+        <p>{{ $message }}</p>
+    </div>
 @endif
 
 <div class="todo__content">

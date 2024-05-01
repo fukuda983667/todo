@@ -3,11 +3,12 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Http\Requests\TodoRequest;
 use App\Models\Todo;
 
 class TodoController extends Controller
 {
-    public function index(Request $request)
+    public function index(TodoRequest $request)
     {
         $todos = Todo::all();
         $message = $request->input('message');
