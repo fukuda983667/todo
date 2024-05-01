@@ -1,7 +1,8 @@
-.result {
+.result__message {
     background: #a0c99d;
     height: 50px;
     width: auto;
+    color: rgb(54, 100, 61);
 }
 
 .todo__content {

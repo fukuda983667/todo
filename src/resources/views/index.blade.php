@@ -5,10 +5,16 @@
 @endsection
 
 @section('content')
-<div class="result"></div>
+
+@if(isset($message))
+    <!-- $messageがnullでない場合に表示するコンテンツ -->
+    <div class="result__message">{{ $message }}</div>
+@endif
+
 <div class="todo__content">
 
-    <form action="'/'" class="form__todo--create" method="post">
+    <form action="/todos" class="form__todo--create" method="post">
+        @csrf
         <div class="form__input--text">
             <input type="text" name="content"/>
         </div>
@@ -19,9 +25,11 @@
 
     <h2>Todo</h2>
 
+    @foreach ($todos as $todo)
     <form action="'/'" class="form__todo--list" method="post">
+        @csrf
         <div class="form__input--text">
-            <input type="text" name="content" value="{{ old('content') }}"/>
+            <input type="text" name="content" value="{{ $todo['content'] }}"/>
         </div>
 
         <div class="button__wrapper">
@@ -33,7 +41,7 @@
             </div>
         </div>
     </form>
-
+    @endforeach
 </div>
 
 

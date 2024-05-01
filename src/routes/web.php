@@ -13,4 +13,5 @@ use App\Http\Controllers\TodoController;
 |
 */
 
-Route::get('/', [TodoController::class, 'index']);
+Route::get('/', [TodoController::class, 'index'])->name('index.route');
+Route::post('/todos', [TodoController::class, 'store']);
