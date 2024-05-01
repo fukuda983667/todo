@@ -1,0 +1,89 @@
+.result {
+    background: #a0c99d;
+    height: 50px;
+    width: auto;
+}
+
+.todo__content {
+    margin: 0 auto;
+    padding: 30px 15px;
+    max-width: 800px;
+}
+
+/* form__todo--create▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
+.form__todo--create {
+    margin: 30px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.form__input--text {
+    margin: auto 0;
+}
+
+.form__input--text input {
+    padding: 10px;
+    width: 500px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+}
+
+.form__button--create button{
+    padding: 10px;
+    width: 150px;
+    background-color: black;
+    color: white;
+    border-radius: 3px;
+    cursor: pointer;
+}
+/* form__todo--create▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
+
+/* form__todo--list▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
+h2 {
+    margin: 0;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.form__todo--list {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 15px;
+    border-bottom: 1px solid #ddd;
+}
+
+.form__todo--list .form__input--text input {
+    margin: auto 0;
+    border: none;
+}
+
+.button__wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+.form__button--update button{
+    margin: 10px 15px 10px 0;
+    padding: 5px;
+    width: 60px;
+    background-color: rgb(71, 122, 241);
+    color: white;
+    border: none;
+    border-radius: 3px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.form__button--delete button {
+    margin: 10px 0px 10px 0;
+    padding: 5px;
+    width: 60px;
+    background-color: rgb(234, 63, 63);
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+/* form__todo--list▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
