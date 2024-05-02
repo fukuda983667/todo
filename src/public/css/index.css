@@ -1,4 +1,10 @@
-.result__message {
+.todo__content {
+    margin: 0 auto;
+    padding: 30px 15px;
+    max-width: 800px;
+}
+
+.result__message--successfully {
     display: flex;
     background: #a0c99d;
     height: 50px;
@@ -7,15 +13,23 @@
     align-items: center;
 }
 
-.result__message p {
+.result__message--successfully p {
     margin: 0;
     margin-left: 15px;
 }
 
-.todo__content {
-    margin: 0 auto;
-    padding: 30px 15px;
-    max-width: 800px;
+.result__message--error {
+    display: flex;
+    background: #c99d9d;
+    height: 50px;
+    width: auto;
+    color: rgb(100, 54, 54);
+    align-items: center;
+}
+
+.result__message--error p {
+    margin: 0;
+    margin-left: 15px;
 }
 
 /* form__todo--create▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
@@ -46,34 +60,26 @@
 }
 /* form__todo--create▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
 
-/* form__todo--list▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
+/* edit__content▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
 h2 {
     margin: 0;
     padding: 10px 0;
     border-bottom: 1px solid #ddd;
 }
 
-.form__todo--list {
+.edit__content {
     display: flex;
     justify-content: space-between;
     padding: 5px 15px;
     border-bottom: 1px solid #ddd;
 }
 
-.form__todo--list .form__input--text input {
-    margin: auto 0;
-    border: none;
-}
-
-.button__wrapper {
+.form__update {
     display: flex;
-    justify-content: space-between;
 }
-
-
 
 .form__button--update button{
-    margin: 10px 15px 10px 0;
+    margin: 10px 15px 10px 100px;
     padding: 5px;
     width: 60px;
     background-color: rgb(71, 122, 241);
@@ -94,4 +100,4 @@ h2 {
     border-radius: 3px;
     cursor: pointer;
 }
-/* form__todo--list▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
+/* edit__content▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
