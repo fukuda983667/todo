@@ -13,6 +13,10 @@
     </div>
 @endif
 
+@error('content')
+    {{$message}}
+@enderror
+
 <div class="todo__content">
 
     <form action="/todos" class="form__todo--create" method="post">
