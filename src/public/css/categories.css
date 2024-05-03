@@ -96,6 +96,10 @@ th p{
     display: flex;
 }
 
+.form__update input {
+    border: none;
+}
+
 .form__button--update button{
     margin: 10px 15px 10px 100px;
     padding: 5px;
