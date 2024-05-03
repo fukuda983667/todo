@@ -1,4 +1,4 @@
-.todo__content {
+.category__content {
     margin: 0 auto;
     padding: 30px 15px;
     max-width: 800px;
@@ -32,15 +32,15 @@
     margin-left: 15px;
 }
 
-/* form__todo--create▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
-.form__todo--create {
+/* form__category--create▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
+.form__category--create {
     margin: 10px 0;
     display: flex;
     justify-content: space-between;
 }
 
 .form__input--text {
-    width: 350px;
+    width: 500px;
     margin: auto 0;
 }
 
@@ -60,31 +60,10 @@
     cursor: pointer;
 }
 
-.select-box select {
-    width: 150px;
-    margin-right: 70px;
-    padding: 9px;
-    border: 1px solid #ddd;
-    border-radius: 3px;
-    background-color: #fff;
-    font-size: 16px;
-    color: #333;
-}
-/* form__todo--create▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
-
-.form__todo--search {
-    margin: 10px 0;
-    display: flex;
-    justify-content: space-between;
-}
-
-h2 {
-    margin: 0;
-    padding: 10px 0;
-}
+/* form__category--create▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
 
 /* edit__content▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
-.todo__list {
+.category__list {
     margin-top: 40px;
 }
 
@@ -96,11 +75,6 @@ tr {
 
 th {
     margin-right: 100px;
-}
-
-td {
-    display: block;
-    width: 100%;
 }
 
 th p{
@@ -115,26 +89,15 @@ th p{
 .edit__content {
     display: flex;
     justify-content: space-between;
-    padding: 5px 10px;
-    width: 100%;
+    padding: 5px 15px;
 }
 
 .form__update {
     display: flex;
 }
 
-.form__update p {
-    display: block;
-    margin-left: 30px;
-    margin-right: 220px;
-}
-
-.form__update .form__input--text {
-    width: 280px;
-}
-
 .form__button--update button{
-    margin: 10px 15px 10px 0px;
+    margin: 10px 15px 10px 100px;
     padding: 5px;
     width: 60px;
     background-color: rgb(71, 122, 241);

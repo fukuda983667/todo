@@ -5,20 +5,22 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Http\Requests\TodoRequest;
 use App\Models\Todo;
+use App\Models\Category;
 
 class TodoController extends Controller
 {
     // indexに$requestを引数に指定するとリダイレクトループしてエラーになる。
     public function index()
     {
-        $todos = Todo::all();
-        return view('index', ['todos' => $todos]);
+        $todos = Todo::with('category')->get();
+        $categories = Category::all();
+        return view('index', ['todos' => $todos,'categories' => $categories]);
     }
 
     public function store(TodoRequest $request)
     {
         // ->only([]);で指定のキーを配列で返す。
-        $todo = $request->only(['content']);
+        $todo = $request->only(['content','category_id']);
         Todo::create($todo);
         return redirect('/')->with('message', 'Todoを作成しました');
     }
@@ -32,7 +34,7 @@ class TodoController extends Controller
         // @csrfにより、csrf対策用のトークンが生成されるため、削除。連想配列の子要素が増えている状態
         unset($form['_token']);
         // レコードを検索、更新
-        todo::find($request->id)->update($form);
+        Todo::find($request->id)->update($form);
         return redirect('/')->with('message', 'Todoを更新しました');
     }
 
