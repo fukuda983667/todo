@@ -41,10 +41,10 @@
     </form>
 
     <h2>Todo検索</h2>
-    <form action="/todos" class="form__todo--search" method="post">
+    <form action="/todos/search" class="form__todo--search" method="get">
         @csrf
         <div class="form__input--text">
-            <input type="text" name="content"/>
+            <input type="text" name="keyword"/>
         </div>
         <div class="select-box">
             <select name='category_id'>

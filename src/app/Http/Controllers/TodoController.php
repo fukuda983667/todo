@@ -12,7 +12,9 @@ class TodoController extends Controller
     // indexに$requestを引数に指定するとリダイレクトループしてエラーになる。
     public function index()
     {
+        // categoriesテーブルが紐づいたTodosテーブルを取得
         $todos = Todo::with('category')->get();
+        // categoriesテーブルのみ取得
         $categories = Category::all();
         return view('index', ['todos' => $todos,'categories' => $categories]);
     }
@@ -42,5 +44,13 @@ class TodoController extends Controller
     {
         Todo::find($request->id)->delete();
         return redirect('/')->with('message', 'Todoを削除しました');
+    }
+
+    public function search(Request $request)
+    {
+        // categoriesテーブルを参照しつつ、検索
+        $todos = Todo::with('category')->CategorySearch($request->category_id)->KeywordSearch($request->keyword)->get();
+        $categories = Category::all();
+        return view('index', compact('todos', 'categories'));
     }
 }
